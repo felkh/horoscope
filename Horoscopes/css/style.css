@@ -1,0 +1,138 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+html {
+  min-height: 100%;
+  background-image: linear-gradient(#f879f4, #FFE6FE);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+body {
+ min-height: 100%;
+ margin: 0;
+ margin-top: 10%;
+}
+
+h1, span, h3 {
+  color: aliceblue;
+}
+
+h1 {
+  font-family: 'Niconne', cursive;;
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+
+  header {
+  
+  }
+  
+  footer {
+    bottom: 0;
+    width: 100%;
+    position: relative;
+    clear: both;
+    margin-top: 10px;
+    height: 5%;
+  }
+
+  p {
+    width: 100%;
+    padding: 0 2%;
+    color: rgb(45, 0, 54);
+    margin: 5% auto 12% auto;
+  }
+
+  span {
+    display: block;
+    font-family: 'Courgette', cursive;
+    font-size: 1.7rem;
+    margin-top: 5%;
+  }
+
+  select {
+    margin-right: 0.8rem;
+  }
+
+  #container {
+    height: 2rem;
+  }
+
+  #scout-image {
+    height: 10rem;
+    display: block;
+    margin: 12% auto 0 auto;
+  }
+  
+  
+ 
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+ 
+  
+  @media screen and (min-width: 481px) { 
+    h1 {
+      margin: 50px 20px 20px 20px;
+    }
+
+    p {
+      padding: 0 5%;
+    }
+
+    #month-select {
+      width: 140px;
+    }
+
+    #day-select {
+      width: 70px;
+    }
+
+    #scout-image {
+      margin-top: 8%;
+    }
+
+  }
+
+  @media screen and (min-width: 1025px) and (min-height: 900px), (min-height: 769px) {
+    p {
+      width: 80%;
+    }
+
+    footer {
+      position: absolute;
+    }
+  }
+
+  @media screen and (max-height: 768px) {
+    footer {
+      display: none;
+    }
+  }
